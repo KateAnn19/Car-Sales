@@ -21,18 +21,14 @@ const AdditionalFeatures = props => {
 
 
 const mapStateToProps = state => {
-  //aways returns an object
-  //returns out of it data
-  //that will be added to the props of the connected component
   return {
-    editing: state.editing,
-    title: state.title
+    additionalFeatures: state.additionalFeatures
   };
 };
 
 export default connect(
-  mapStateToProps,
-  { toggleEditing }
+  mapStateToProps
 )(AdditionalFeatures); //function currying
+
 
 
